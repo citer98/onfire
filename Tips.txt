@@ -1,0 +1,25 @@
+APP\Http\Controller , untuk controller
+
+Routes\web.php , untuk mengatur rutenya (URLnya lah)
+
+Resources\Views\layout , sebagai acuan blade pada folder "halaman"
+Resources\Views\halaman , sebagai pengatur webpage 
+
+Public\Css\app.css , css layout
+
+Daftar Routes:
+(dari Web.php)
+http://127.0.0.1:8000/siswa
+http://127.0.0.1:8000/siswa/$id (angka berapa saja)
+http://127.0.0.1:8000/siswa/$id/$nama (angka dan nama yang bebas)
+
+(dari SiswaController.php)
+http://127.0.0.1:8000/siswac
+http://127.0.0.1:8000/siswac/$id (angka berapa saja)
+http://127.0.0.1:8000/siswacs/$id/$nama (angka dan nama yang bebas)
+
+(dari HalamanController, menampilkan views blade pada folder halaman, dan blade tersebut mengacu pada aplikasi.blade.php di folder layout)
+http://127.0.0.1:8000
+http://127.0.0.1:8000/tentang
+http://127.0.0.1:8000/kontak
+
